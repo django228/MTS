@@ -28,5 +28,4 @@ python -m pytest
 При push, pull request или ручном запуске GitHub Actions получает исходники,
 собирает образ и запускает его. Ошибка сборки или теста приводит к падению job.
 
-[Запуски GitHub Actions](https://github.com/django228/MTS/actions/workflows/ci.yml).
-После первого успешного запуска нужно добавить сюда ссылку на конкретный run.
+https://github.com/django228/MTS/actions/runs/40583444456/job/122468622782
