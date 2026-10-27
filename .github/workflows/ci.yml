@@ -1,0 +1,20 @@
+name: API tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t api-test .
+      - name: Run API tests
+        run: docker run --rm api-test
